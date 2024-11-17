@@ -12,6 +12,8 @@ class Asteroid(CircleShape):
 
     def update(self, dt):
         self.position += (self.velocity * dt)
+        self.position.x %= (SCREEN_WIDTH + (ASTEROID_MAX_RADIUS * 2))
+        self.position.y %= (SCREEN_HEIGHT + (ASTEROID_MAX_RADIUS * 2))
 
     def split(self):
         self.kill()
@@ -25,4 +27,3 @@ class Asteroid(CircleShape):
         a2 = Asteroid(self.position.x, self.position.y, new_radius)
         a1.velocity = vel1 * 1.2
         a2.velocity = vel2 * 1.2
-        
