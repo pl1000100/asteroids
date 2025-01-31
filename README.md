@@ -1,12 +1,12 @@
-## asteroids
+# asteroids
 
-# changelog 1.1
+## changelog 1.1
 Add a scoring system
 Implement multiple lives and respawning
 Add acceleration to the player movement
 Make the objects wrap around the screen instead of disappearing
 
-# to-do
+## to-do
 Add an explosion effect for the asteroids
 Add a background image
 Create different weapon types
